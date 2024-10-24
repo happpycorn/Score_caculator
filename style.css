@@ -1,5 +1,128 @@
-/* 收合內容的樣式 */
-.content {
-    display: none; /* 預設隱藏 */
-    overflow: hidden;
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Noto Sans TC, sans-serif;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+body{
+    background: #dcdcdc;
+    /* align-content: center; */
+    /* justify-content: center; */
+    height: 100%;
+    padding: 20px;
+}
+
+.wrapper{
+
+    padding: 25px;
+
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+}
+
+.title{
+    margin-bottom: 20px;
+}
+
+.content{
+    display: none;
+}
+
+label {
+    display: block; /* 使標籤獨占一行 */
+    margin: 10px; /* 標籤和輸入框之間的間距 */
+    margin-left: 0px; /* 標籤和輸入框之間的間距 */
+    font-weight: bold; /* 加粗標籤文字 */
+}
+
+.mistakesInput {
+    width: calc(100% - 25px); /* 輸入框寬度 */
+    padding: 10px; /* 輸入框內部間距 */
+    border: 1px solid #ccc; /* 輸入框邊框 */
+    border-radius: 4px; /* 輸入框圓角 */
+    font-size: 16px; /* 輸入框文字大小 */
+    transition: border-color 0.3s; /* 邊框顏色過渡效果 */
+}
+
+.mistakesInput:focus {
+    border-color: #000; /* 當輸入框獲得焦點時的邊框顏色 */
+    outline: none; /* 去除默認的焦點外框 */
+}
+
+.calculate-button {
+    background-color: #fff;
+    border: 1px solid #000;
+    color: #000;
+    margin: 20px;
+    margin-left: 0px; /* 標籤和輸入框之間的間距 */
+    border-radius: 5px; /* 圓角 */
+    padding: 10px 20px; /* 內邊距 */
+    font-size: 16px; /* 字體大小 */
+    cursor: pointer; /* 鼠標指針 */
+    transition: background-color 0.5s; /* 漸變效果 */
+}
+
+.calculate-button:hover {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    margin: 21px;
+    margin-left: 0px; 
+}
+
+#result {
+    font-size: 18px; /* 字體大小 */
+    color: #232323; /* 字體顏色 */
+}
+
+.collapswrapper{
+    padding: 25px;
+}
+
+.horpair{
+    display: flex;
+}
+
+.setting{
+    margin-right: 20px;
+}
+
+.settingInput{
+    width: calc(100% - 25px); /* 輸入框寬度 */
+    padding: 5px; /* 輸入框內部間距 */
+    border: 1px solid #ccc; /* 輸入框邊框 */
+    border-radius: 4px; /* 輸入框圓角 */
+    font-size: 16px; /* 輸入框文字大小 */
+    transition: border-color 0.3s; /* 邊框顏色過渡效果 */
+}
+
+.settingInput:focus {
+    border-color: #000; /* 當輸入框獲得焦點時的邊框顏色 */
+    outline: none; /* 去除默認的焦點外框 */
+}
+
+.collapsible {
+    background-color: #fff;
+    border: 1px solid #000;
+    color: #000;
+
+    margin-left: 0px; /* 標籤和輸入框之間的間距 */
+    border-radius: 5px; /* 圓角 */
+    padding: 10px 20px; /* 內邊距 */
+    font-size: 16px; /* 字體大小 */
+    cursor: pointer; /* 鼠標指針 */
+    transition: background-color 0.5s; /* 漸變效果 */
+}
+
+.collapsible:hover {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    margin: 1px;
+    margin-left: 0px; 
 }
