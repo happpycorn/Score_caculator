@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style src="style.css"></style>
+    <title>Score Calulator | Happpy corn</title>
+</head>
+<body>
+
+    <h1>考試分數計算器</h1>
+
+    <!-- 單選錯幾題 -->
+    <label for="singleMistakes">單選題：</label>
+    <input type="number" id="singleMistakes" value="0" placeholder="輸入錯多少題"><br>
+
+    <!-- 多選錯誤選項 -->
+    <label for="multiOneMistake">多選錯一題：</label>
+    <input type="number" id="multiOneMistake" value="0" placeholder="輸入錯一題有幾題"><br>
+
+    <label for="multiTwoMistakes">多選錯兩題：</label>
+    <input type="number" id="multiTwoMistakes" value="0" placeholder="輸入錯兩題有幾題"><br>
+
+    <label for="multiThreeOrMore">錯三題以上：</label>
+    <input type="number" id="multiThreeOrMore" value="0" placeholder="輸入錯三題以上有幾題"><br>
+
+    <!-- 計算結果 -->
+    <button onclick="calculateScore()">計算分數</button>
+
+    <p id="result">100</p>
+
+    <!-- 可收合的按鈕 -->
+    <button class="collapsible">點擊展開選單</button>
+
+    <!-- 收合的內容區域 -->
+    <div class="content">
+        <label for="totalPoints">總分:</label>
+        <input type="number" id="totalPoints" value="100" placeholder="輸入總分"><br>
+        
+        <label for="singlePoints">單選題每題分數：</label>
+        <input type="number" id="singlePoints" value="2" placeholder="輸入單選題分數"><br>
+
+        <label for="multiPoints1">多選錯一題扣分：</label>
+        <input type="number" id="multiPoints1" value="0.8" placeholder="輸入多選題分數"><br>
+
+        <label for="multiPoints2">多選錯兩題扣分：</label>
+        <input type="number" id="multiPoints2" value="1.6" placeholder="輸入多選題分數"><br>
+
+        <label for="multiPoints3">錯三題以上扣分：</label>
+        <input type="number" id="multiPoints3" value="2" placeholder="輸入多選題分數"><br>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

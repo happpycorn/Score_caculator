@@ -1,0 +1,5 @@
+/* 收合內容的樣式 */
+.content {
+    display: none; /* 預設隱藏 */
+    overflow: hidden;
+}
